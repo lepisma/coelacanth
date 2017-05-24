@@ -99,12 +99,19 @@ function mergeObject(oldObject, newObject) {
 
   function _merge(oo, no) {
     for (var key in no) {
-      if (key in oo && oo[key] === Object(oo[key])) {
-        _merge(oo[key], no[key]);
+      if (key in oo) {
+        // Follow structure of oo
+        if (oo[key] === Object(oo[key])) {
+          _merge(oo[key], no[key]);
+        } else if (no[key] !== Object(no[key])) {
+          oo[key] = no[key];
+        }
       } else {
+        // Plain assign
         oo[key] = no[key];
       }
     }
+    return oo;
   }
 
   return _merge(oldCopy, newObject);

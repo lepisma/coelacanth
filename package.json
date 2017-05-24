@@ -2,7 +2,7 @@
   "name": "coelacanth",
   "version": "0.1.1",
   "description": "Derivation based config management with defaults and overrides Edit",
-  "main": "./dist/coelacanth.js",
+  "main": "./coelacanth.js",
   "repository": "git@github.com:lepisma/coelacanth.git",
   "author": "Abhinav Tushar <abhinav.tushar.vs@gmail.com>",
   "license": "GPL-3.0",
@@ -10,19 +10,18 @@
     "compile": "webpack",
     "build": "PROD_ENV=1 webpack",
     "prepublish": "npm run compile",
-    "test": "standard",
+    "test": "standard && mocha",
     "watch": "webpack --watch"
   },
   "standard": {
     "ignore": [
-      "/dist/*.js"
+      "/coelacanth*.js"
     ]
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-latest": "^6.24.1",
-    "chai": "^3.5.0",
     "mocha": "^3.4.1",
     "standard": "^10.0.2",
     "webpack": "^2.6.0"

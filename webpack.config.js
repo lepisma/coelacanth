@@ -17,11 +17,11 @@ if (PROD) {
 }
 
 const config = {
-  entry: path.resolve(__dirname, 'index.js'),
+  entry: path.resolve(__dirname, 'src.js'),
 
   output: {
     filename: PROD ? 'coelacanth.min.js' : 'coelacanth.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: __dirname,
     library: 'coelacanth',
     libraryTarget: 'umd',
     umdNamedDefine: true
