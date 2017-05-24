@@ -1,6 +1,6 @@
 {
   "name": "coelacanth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Derivation based config management with defaults and overrides Edit",
   "main": "./dist/coelacanth.js",
   "repository": "git@github.com:lepisma/coelacanth.git",
