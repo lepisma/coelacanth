@@ -17,7 +17,7 @@ if (PROD) {
 }
 
 const config = {
-  entry: path.resolve(__dirname, 'coelacanth.js'),
+  entry: path.resolve(__dirname, 'index.js'),
 
   output: {
     filename: PROD ? 'coelacanth.min.js' : 'coelacanth.js',
