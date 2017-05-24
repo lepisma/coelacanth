@@ -1,7 +1,7 @@
 {
   "name": "coelacanth",
   "version": "0.2.1",
-  "description": "Derivation based config management with defaults and overrides Edit",
+  "description": "Derivation based config management with defaults and overrides",
   "main": "./coelacanth.js",
   "repository": "git@github.com:lepisma/coelacanth.git",
   "author": "Abhinav Tushar <abhinav.tushar.vs@gmail.com>",
